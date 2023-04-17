@@ -1,0 +1,97 @@
+            
+                body{color: gold;}
+                    .grupo_1{ color: darkgreen;}
+                    #listaU{ color:magenta;}
+                    #item_1 { color:red;}
+                    #item_2 { color:blue;}
+                    #item_3 { color:red;}
+                    #item_4 { color:red;}
+                    #link_1{text-decoration: overline;}
+                    #link_2{text-decoration: none;}
+                    #link_3{text-decoration: line-through;}
+                    #link_4{text-decoration: underline line-through;}
+                    #link_5{text-decoration: underline;}
+
+                    .tablaColoress{
+                        color: black;
+                    }
+
+            p{
+                background-color: black;
+                color:white  ;
+                margin: 25px;
+                text-align: justify;
+                text-indent: 50px;
+              
+            }
+            #pEspecial{
+                background-color: darkblue;
+                color: white;
+                text-transform: uppercase;
+                line-height: 2;
+                font-family: 'Delicious Handrawn', cursive;
+                font-family: 'Roboto', sans-serif;
+
+            }
+            #cuadro{
+                border:3px solid black;
+            }
+            
+           #cuadro th, #cuadro td{
+                border:1px  dotted gray;
+            }
+            .alterno{
+                background-color: gray;
+            }
+            #cuadro td:hover #cuadro th:hover{
+                background-color:blueviolet;
+                color:black;
+                font-family: 'Gruppo', cursive;
+            }
+            td:hover{
+                background-color: blue;
+            }
+            h1:hover, h2:hover, h3:hover, h4:hover{
+              color:rgb(0,0,0);
+                background-color:gainsboro;
+                text-transform: uppercase;
+                text-shadow:green 0px 1px 7px;
+                font-family: 'Gruppo', cursive;
+                font-size:100px;
+            }
+        hgroup_1{
+            color:darkgreen;
+        }
+        #lista_u{
+            color:magenta;
+        }
+        #lista_item1{
+            color:magenta;
+        }
+        #lista_item2{
+            color:magenta;
+        }
+        #lista_item3{
+            color:magenta;
+        }
+        #lista_item4{
+            color:magenta;
+        }
+        
+        .tablacolores{ color:black; font-family: 'delicio';}
+        .color_1-1 {background-color: rgb(255,0,0);}
+        .color_1-2{background-color: rgb(255,64,0);}
+        .color_1-1 {background-color: rgb(255,128,0);}
+        .color_1-2{background-color: rgb(255,191,0);}
+        .color_1-1 {background-color: rgb(255,255,0);}
+        .color_1-2{background-color: rgb(255,191,0);}
+        .color_1-1 {background-color: rgb(255,0,0);}
+        .color_1-2{background-color: rgb(128,255,0);}
+        .color_1-1 {background-color: rgb(255, ,0);}
+        .color_1-2{background-color: rgb(255,64,0);}
+        .color_1-1 {background-color: rgb(255,0,0);}
+        .color_1-2{background-color: rgb(255,64,0);}
+
+
+
+   
