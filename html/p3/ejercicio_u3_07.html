@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- 
+    Nombre: Cristian Alejandro Rodriguez Moreno
+    Materia: Programacion Web 1
+    Fecha: 11 de mayo de 2023
+    descripcion: Tarea modulo 4
+-->
+<html lang="es">
+    <head>
+        <title>Unidad 02 - ejercicio 1</title>
+        <meta charset="utf-8">
+        <meta  name "author" content="Cristian">
+        <meta  name "revised" content="">
+        <meta  name "description" content="for, while, do">
+        <style>
+            .Tit{background-color: black; color: aqua;}
+        </style>
+    </head>
+    <body>
+        <h1 class="Tit">Javascript</h1>
+        <script>
+            let varnum;
+        /*Ciclo for*/
+        for(varnum=100;varnum>=0;varnum-=10){
+            console.log("For >>Valor: "+ varnum);
+        }
+
+        /*Ciclo do while*/
+        varnum=100;
+        do{
+            console.log("Do While >>Valor: "+ varnum);
+            varnum-=10;
+        }while(varnum>=0);
+
+        varnum=100;
+        while(varnum>=0){
+            console.log(" While >>Valor: "+ varnum);
+            varnum-=10;
+        }
+        //ciclo for infinito
+        varnum1=100;
+        for(;;){
+            console.log("for infinito"+varnum1);
+            if(varnum1>0)
+            varnum1-=10;
+            else
+            break;
+        }
+        let varnum1;
+        let varvalor1= Number(prompt("Valor inicial del ciclo"));
+        let varvalor2= Number(prompt("Valor final del ciclo"));
+
+        let band = false, bandin=false;
+
+        if (valor1>valor2)
+        band=true;
+        else
+        bandin=true;
+        varnum1=100;
+        if(Number.isNaN(varvalor1)||Number.isNaN(varvalor2)){
+            alert("los limites deben ser numericos");
+        }
+            else{
+            for(varnum1=varvalor1;varnum1>=varvalor2;varnum1-=10){
+                console.log("for dinamico"+varnum1);
+            }
+        }
+        let varhistorial;
+        varhistorial="--Registro de operacones realizadas";
+        do{
+            let varnum11= prompt("intriduce primer operando");
+        let varnum2= prompt("intriduce segundo operando");
+        let varop= prompt("Operacion");
+
+        varnum11= Number.parseInt(varnum11,10);
+        varnum2= Number.parseInt(varnum2,10);
+        let varres="";
+
+        if(!(Number.isNaN(varnum11) && Number.isNaN(varnum2))){
+            //OPeracion
+            switch(varop){
+                case '+':varres= "Elresultado de: "+ varnum11+ "+ "+varnum2 + " es: " + (varnum1+varnum2);
+                    break;
+                case '-':varres= "Elresultado de: "+ varnum11+ "- "+varnum2 + " es: " + (varnum1+varnum2);
+                    break;
+                case '*':varres= "Elresultado de: "+ varnum11+ "* "+varnum2 + " es: " + (varnum1+varnum2);
+                    break;
+                case '/':varres= "Elresultado de: "+ varnum11+ "/ "+svarnum2 + " es: " + (varnum1+varnum2);
+                    break;
+                default:varres= "operacion incorrecta";
+            }
+        }else{
+            varres=("los opradores deben ser valores numericos");
+        }
+        alert(varres);
+        vaeHistorial+= "\n"+ varres;
+        let varcontinuar= confirm("desea realizar otra operacion");
+        alert(varhistorial);
+
+        }while(varcontinuar);
+        </script>
+    </body>
+</html>

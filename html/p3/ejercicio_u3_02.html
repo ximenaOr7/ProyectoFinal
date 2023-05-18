@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- 
+    Nombre: Ximena Ortiz Barrientos
+    Materia: Programacion Web 1
+    Fecha: 
+    descripcion:
+-->
+<html lang=""es>
+    <head>
+        <title>Plantilla</title>
+        <meta charset="utf-8">
+        <meta  name "author" content="Ximena">
+        <meta  name "revised" content="">
+        <meta  name "description" content="">
+        <style>
+            .Tit{ background-color: black; color: aqua}
+        </style>
+    </head>
+    <body>
+       <h1 class="Tit"> JavaScript - var & alert</h1>
+       <script>
+         let x = 100;
+    let y = 50;
+    console.log("main");
+    console.log(x);
+    console.log(y);
+    alert("valor de x(Main):" +x);
+    alert("valor de y(Main):" +y);
+
+function testFunction() {
+    let x = 1;
+    let y = 5;
+    
+    alert("valor de x(function):" +x);
+    alert("valor de y(function):" +y);
+}
+testFunction();
+
+alert("...se procede a continuar con la carga de la página.");
+       </script>
+       <script>
+        /*2.1.1.19 variables - tareas*/
+        const precioRosa = 8;
+        const costoLirio = 10;
+        const tulipanPrecio = 2;
+
+        let  numeroRosas =70, importeRosas;      // rosaPrecio,rosaCantidad , rosaSubtotal
+        let  cantidadLirio =50, subtotalLirio;    //lirioPrecio, lirioCantidad, lirioSubtotal
+        let tulipanCantidad=120, tulipanSubtotal;   //tulipanPrecio, tulipanCantidad
+        let total = 0;
+
+       /* importeRosas =precioRosa * numeroRosas;
+        subtotalLirio =costoLirio *cantidadLirio;
+        tulipanSubtotal= tulipanPrecio* tulipanCantidad;
+
+        total= importeRosas+ subtotalLirio+tulipanSubtotal;
+
+        alert("Rosas >> precio:$" + precioRosa + ", cantidad: ,"+ numeroRosas + "valor:$" + importeRosas+ 
+        "\nLirios>> precio:$ ,"+costoLirio+" ,cantidad:"+ cantidadLirio+ ",valor:$"+subtotalLirio+
+        " \nTulipanes >> precio:$ "+tulipanPrecio+", cantidad:"+tulipanCantidad+ ",valor:$"+tulipanSubtotal+
+        "\n\nTOTAL >>$"+total);
+
+        numeroRosas -= 20;
+        cantidadLirio -= 30;
+        */
+
+        function calcula(){
+         importeRosas =precioRosa * numeroRosas;
+        subtotalLirio =costoLirio *cantidadLirio;
+        tulipanSubtotal= tulipanPrecio* tulipanCantidad;
+
+        total= importeRosas+ subtotalLirio+tulipanSubtotal;
+        }
+
+        function resultado(){
+            alert("Rosas >> precio:$" + precioRosa + ", cantidad: ,"+ numeroRosas + "valor:$" + importeRosas+ 
+        "\nLirios>> precio:$ ,"+costoLirio+" ,cantidad:"+ cantidadLirio+ ",valor:$"+subtotalLirio+
+        " \nTulipanes >> precio:$ "+tulipanPrecio+", cantidad:"+tulipanCantidad+ ",valor:$"+tulipanSubtotal+
+        "\n\nTOTAL >>$"+total);
+        }
+
+        calcula();
+        resultado();
+
+        /*Modificar cantidades*/
+        numeroRosas -= 20;
+        cantidadLirio -= 30;
+
+        calcula();
+        resultado();
+
+        /*Modificar cantidades*/
+        tulipanCantidad-=60;
+        calcula();
+        resultado();
+
+       </script>
+
+       <script>
+        /* 2.1.1.20 LABORATORIO: Variables */
+        let nombre, telefono,correo;
+
+        function imprime(str1, str2, str3){
+            alert("Nombre:"+ str1 +"\nTeléfono:" + str2 + "\nCorreo:" +str3);
+        }
+
+        nombre =" Maxwell Wright";
+        telefono="(0191) 719 6495";
+        correo=" Curabitur.egestas.nunc@nonummyac.co.uk";
+        imprime(nombre,telefono,correo);
+
+        nombre ="Raja Villarreal";
+        telefono="0866 398 2895";
+        correro="posuere.vulputate@sed.com ";
+
+        nombre ="Helen Richards";
+        telefono="0800 1111";
+        correro="libero@convallis.edu ";
+
+       </script>
+    </body>
+</html>

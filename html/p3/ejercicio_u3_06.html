@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- 
+    Nombre: Cristian Alejandro Rodriguez Moreno
+    Materia: Programacion Web 1mama
+    Fecha: 08/05/2023
+    descripcion: Tareas modulo n4
+-->
+<html lang="es">
+    <head>
+        <title>Unidad 02 - ejercicio 1</title>
+        <meta charset="utf-8">
+        <meta  name "author" content="Cristian">
+        <meta  name "revised" content="Lunes, 08 de mayo de 2023">
+        <meta  name "description" content="">
+        <style>
+            .Tit{background-color: black; color: aqua;}
+        </style>
+    </head>
+    <body>
+        <h1 class="Tit">Javascript - Condicionales</h1>
+        <script>
+            /*4.1.1.11 Condicionales*/
+            let varnum= prompt("introduce un valor para jugar..", "0");
+            varnum= varnum? varnum: "0";
+            /*Tarea 1*/
+            if (varnum>90 && varnum<110){
+                alert("¡Bingo!");
+            }else{
+                alert("¡Fallaste!");
+            }
+            /*Tarea 2*/
+            let varres1 = false;
+            varres1= (varnum>90 && varnum<110)?"¡Loteria!":"¡perdiste!";
+            alert(varres1);
+
+            let varnum1= prompt("intriduce primer operando");
+let varnum2= prompt("intriduce segundo operando");
+let varop= prompt("Operacion");
+
+varnum1= Number.parseInt(varnum1,10);
+varnum2= Number.parseInt(varnum2,10);
+let varres="";
+
+if(!(Number.isNaN(varnum1) && Number.isNaN(varnum2))){
+    //OPeracion
+    switch(varop){
+        case '+':varres= "Elresultado de: "+ varnum1+ "+ "+varnum2 + " es: " + (varnum1+varnum2);
+            break;
+        case '-':varres= "Elresultado de: "+ varnum1+ "- "+varnum2 + " es: " + (varnum1+varnum2);
+            break;
+        case '*':varres= "Elresultado de: "+ varnum1+ "* "+varnum2 + " es: " + (varnum1+varnum2);
+            break;
+        case '/':varres= "Elresultado de: "+ varnum1+ "/ "+svarnum2 + " es: " + (varnum1+varnum2);
+            break;
+        default:varres= "operacion incorrecta";
+    }
+}else{
+    varres=("los opradores deben ser valores numericos");
+}
+alert(varres);
+        </script>
+    </body>
+</html>

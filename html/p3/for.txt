@@ -1,0 +1,13 @@
+let str ="Hola mundo";
+console.log(str);
+
+for(let i =0;i<str.length; i++) {
+    console.log("simbolo: "+str.charAt(i));
+    }
+console.log("sub:" + str.slice(0));
+console.log("sub:" + str.slice(1));
+console.log("sub:" + str.slice(2));
+console.log("sub:" + str.slice(3));
+console.log("sub:" + str.slice(4));
+
+

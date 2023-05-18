@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- 
+    Nombre: Ximena Ortiz Barrientos
+    Materia: Programacion Web 1
+    Fecha: 
+    descripcion:
+-->
+<html lang=""es>
+    <head>
+        <title>unidad 3 - ejercicio 6 </title>
+        <meta charset="utf-8">
+        <meta  name "author" content="ximena ortiz">
+        <meta  name "revised" content="vienres, 05 de mayo del 2023">
+        <meta  name "description" content="">
+        <style>
+              .Tit{ background-color: black; color: aqua}
+        </style>
+    </head>
+    <body>
+        <h1 class="Tit">JavaScript -condicionales </h1>
+        <script>
+            /*4.1.1.11 Tareas: Condicionales*/
+            let varNum = prompt("Introduce el valor para jugar...","0");
+            varNum = varNum? varNum: "0";
+
+
+        /* tAREA No.1 */
+            if(varNum > 90 && varNum<110) {
+                alert("¡Bingo!");
+            }else{
+                alert("¡Fallaste!");
+            }
+
+
+             /* tAREA No.2 */
+           
+           /*let varRes =(varNum >90 && varNum<110)? "¡Lotería!": "¡perdiste!";
+            alert(varRes); */
+            let varRes=(varNum >90)? ((varNum <110) ? "¡Lotería!": "¡perdiste!") : "¡perdiste!";
+            alert(varRes);
+            
+            /* Tarea No. 3 */
+         let varNum1=Number( prompt("Primer operando:"));
+        let varNum2= Number(prompt("segundo operando: (+,-,*,/)"));
+        let varOp= prompt("operación:");
+
+        //varNum1= Number.parseInt(varNum1,10);
+        //varNum2= Number.parseInt(varNum2,10);
+
+        let varRess = "";
+        if(!Number.isNaN(varNum1)&& !Number.isNaN(varNum2)) {
+            switch(varOp){
+            case '+': varRes ="El resultado de: ("+ varNum1 + "+" + varNum2 + ")es:" + (varNum1 + varNum2);
+                break;
+            case '-': varRes ="El resultado de: ("+ varNum1 + "-" + varNum2 + ")es:" + (varNum1 - varNum2);
+                break;
+            case '*': varRes ="El resultado de: "+ varNum1 * "*" * varNum2 + ")es:" * (varNum1 * varNum2);
+                break;
+            case '/':varRes ="El resultado de: ("+ varNum1 + "/" + varNum2 + ")es:" / (varNum1 / varNum2);
+                break;
+            default: varRess ="operación incorrecta...";
+                
+            }
+            
+            }else{
+                alert("los operadores deben ser valores numéricos");
+            }
+
+
+            alert(varRess);
+
+
+        </script>
+    </body>
+</html>

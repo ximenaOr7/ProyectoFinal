@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 
+    Nombre: Cristian Alejandro Rodriguez Moreno
+    Materia: Programacion Web 1mama
+    Fecha: 5/5/2023
+    descripcion: TAREA DEL MODULO 3
+-->
+<html lang="es">
+    <head>
+        <title>Unidad 02 - ejercicio 1</title>
+        <meta charset="utf-8">
+        <meta  name "author" content="Cristian">
+        <meta  name "revised" content="Viernes 5 de mayo de 2023">
+        <meta  name "description" content="alert, prompt">
+        <style>
+            .Tit{background-color: black; color: aqua;}
+        </style>
+    </head>
+    <body>
+        <h1 class="Tit">Javascript opeadores</h1>
+        <script>
+            /*3.3.1.7. intercaccion con el usuario*/
+            let varAnchura=prompt("Cual es el valor de la anchura?", "20");
+            let varAltura= prompt("Cual es el valor de la altura", "10");
+            let varLongitud= prompt("Cual es el valor de la longitud", "50");
+
+            let bandAncho, bandAlto, bandLargo;
+
+            bandAncho= varAnchura? true:false;
+            bandAlto= varAltura? true:false;
+            bandLargo= varLongitud? true:false;
+
+            
+            let srtmensaje= "No es valido el valor introducido para ";
+
+            if (!bandAncho)
+            srtmensaje+= "\n - Anchura";
+            if (!bandAlto)
+            srtmensaje+= "\n - Altura";
+            if (!bandLargo)
+            srtmensaje+= "\n - Longitud";
+            if(bandAncho && bandAlto && bandLargo){
+
+                alert("El volumen del objeto es de : "+(varAnchura*varAltura*varLongitud)+"unidades cubicas");
+            }else{
+                alert(srtmensaje);
+            }
+        </script>
+
+    </body>
+</html>
